@@ -418,6 +418,37 @@ div[data-testid="stSelectbox"] label {
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
 }
+/* Ocultar botones de navegación feos */
+div[data-testid="stHorizontalBlock"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 200 !important;
+    background: rgba(255,255,255,0.05) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    border-radius: 16px !important;
+    padding: 8px !important;
+    width: auto !important;
+}
+
+div[data-testid="stHorizontalBlock"] .stButton > button {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: rgba(255,255,255,0.5) !important;
+    font-size: 12px !important;
+    padding: 8px 16px !important;
+    width: auto !important;
+}
+
+/* Corregir margen del contenido */
+.main-content {
+    margin-left: 100px !important;
+    padding-top: 20px !important;
+}
+            
 
 .stMarkdown p { color: rgba(255,255,255,0.7) !important; }
 </style>
